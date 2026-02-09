@@ -1,0 +1,38 @@
+Instance 3
+
+# Example deliveries
+    deliveries = [
+        Event(2, 3, 2, "delivery", "D1"),
+        Event(5, 4, 1, "delivery", "D2"),
+        Event(1, 7, 3, "delivery", "D3"),
+        Event(6, 1, 2, "delivery", "D4"),
+        Event(8, 9, 4, "delivery", "D5"),
+        Event(1, 1, 2, "delivery", "D6"),
+        Event(0, 1, 1, "delivery", "D7"),
+        Event(1, 2, 1, "delivery", "D8"),]
+
+# Example pickups
+    pickups = [
+        Event(4, 6, 2, "pickup", "P1"),
+        Event(7, 2, 3, "pickup", "P2"),
+        Event(3, 8, 1, "pickup", "P3"),
+        Event(2, 1, 2, "pickup", "P4"),
+        Event(1, 0, 3, "pickup", "P5"), ]
+
+vehicle_capacity = 12
+
+Best route found:
+
+Depot(depot, cap=0.0, (0.0,0.0))
+D7(delivery, cap=1, (0,1))
+D6(delivery, cap=2, (1,1))
+D8(delivery, cap=1, (1,2))
+D1(delivery, cap=2, (2,3))
+D2(delivery, cap=1, (5,4))
+P2(pickup, cap=3, (7,2))
+D4(delivery, cap=2, (6,1))
+Depot(depot, cap=0.0, (0.0,0.0))
+
+Pickup chosen: P2
+Deliveries served: 6
+Route length: 17.9
