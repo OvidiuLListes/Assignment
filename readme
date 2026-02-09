@@ -1,1 +1,5 @@
-This is a short readme file for the assignment at Coolblue
+This is a short readme file for the assignment at Coolblue.
+
+The Python code is contained in the file CVR.py
+
+There are several .txt files, each one containing a problem instance and the solution. 
