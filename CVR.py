@@ -230,9 +230,6 @@ if __name__ == "__main__":
         Event(1, 7, 3, "delivery", "D3"),
         Event(6, 1, 2, "delivery", "D4"),
         Event(8, 9, 4, "delivery", "D5"),
-        Event(1, 1, 2, "delivery", "D6"),
-        Event(0, 1, 1, "delivery", "D7"),
-        Event(1, 2, 1, "delivery", "D8"),
     ]
 
     # Example pickups
@@ -240,11 +237,9 @@ if __name__ == "__main__":
         Event(4, 6, 2, "pickup", "P1"),
         Event(7, 2, 3, "pickup", "P2"),
         Event(3, 8, 1, "pickup", "P3"),
-        Event(2, 1, 2, "pickup", "P4"),
-        Event(1, 0, 3, "pickup", "P5"),
     ]
 
-    vehicle_capacity = 12
+    vehicle_capacity = 7
 
     solution = solve(deliveries, pickups, vehicle_capacity)
 
