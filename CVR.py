@@ -190,7 +190,7 @@ def solve(deliveries: List[Event], pickups: List[Event], vehicle_capacity: float
 
     for pickup in pickups:
 
-        capacity_for_deliveries = vehicle_capacity - pickup.capacity
+        capacity_for_deliveries = vehicle_capacity # - pickup.capacity
         if capacity_for_deliveries < 0:
             continue
 
@@ -234,12 +234,12 @@ if __name__ == "__main__":
 
     # Example pickups
     pickups = [
-        Event(4, 6, 2, "pickup", "P1"),
+        Event(4, 6, 4, "pickup", "P1"),
         Event(7, 2, 3, "pickup", "P2"),
         Event(3, 8, 1, "pickup", "P3"),
     ]
 
-    vehicle_capacity = 7
+    vehicle_capacity = 8
 
     solution = solve(deliveries, pickups, vehicle_capacity)
 
